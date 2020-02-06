@@ -9,9 +9,13 @@ function averageMark(a, g, p) {
 }
 
 function sayHello(userName) {
-    // реализуйте здесь задание №2
-    // раскомментируйте следующую строку и верните результат (строку выше и эту удалите)
-    // return "Привет";
+    let myName = userName;
+
+    let message = `Привет, мир! Меня зовут ${myName}`;
+
+    //console.log ()
+    
+    return message;
 }
 
 function calculateFormula() {
