@@ -12,14 +12,16 @@ function sayHello(userName) {
     let myName = userName;
 
     let message = `Привет, мир! Меня зовут ${myName}`;
-
-    //console.log ()
-    
+       
     return message;
 }
 
 function calculateFormula() {
-    // реализуйте здесь задание №3
-    // раскомментируйте следующую строку и верните результат (строку выше и эту удалите)
-    // return 0;
+    let x = 2;
+    let y = 22;
+    let z = 0;
+
+    let result = x * y + 5 * z + 2 - 1;
+
+    return result;
 }
