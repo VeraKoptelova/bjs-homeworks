@@ -14,7 +14,12 @@ function getAverageMark(marks) {
     if (marks.length > 5) {
         console.log("Оценок больше 5-ти");
         marks = marks.slice(0, 5);
+    } 
+
+    if (marks.length === 0) {
+        return 0;
     }
+
     let sum = 0;
     for (let i = 0; i < marks.length; i++) {
         sum = marks[i] + sum;
@@ -27,8 +32,7 @@ function askDrink(name, dateOfBirthday) {
     if (new Date().getFullYear() - dateOfBirthday.getFullYear() >= 18) {
       stringResult = `Не желаете ли олд-фэшн, ${name}?`;
     } else {
-      stringResult = `Сожалею, ${name}, но я не могу вам продать алкоголь. 
-          Зато могу предложить вам замечательный клюквенный компот!`;
+      stringResult = `Сожалею, ${name}, но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!`;
     }
     return stringResult;
   }
